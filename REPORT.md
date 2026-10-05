@@ -1,8 +1,11 @@
 # Electric Vehicle Purchase Prediction — Final Report
 
-**Competition:** [Kaggle Playground Series S6E9](https://www.kaggle.com/competitions/playground-series-s6e9)  
-**Task:** Predict whether a customer will buy an electric vehicle  
-**Metric:** ROC AUC (higher is better)  
+**Competition:** [Kaggle Playground Series S6E9](https://www.kaggle.com/competitions/playground-series-s6e9)
+
+**Task:** Predict whether a customer will buy an electric vehicle
+
+**Metric:** ROC AUC (higher is better)
+
 **Status:** Competition closed September 30, 2026. The best recorded submission scored **0.94646** on the public leaderboard.
 
 ## Executive summary
