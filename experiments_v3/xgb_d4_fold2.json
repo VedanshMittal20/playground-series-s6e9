@@ -1,0 +1,21 @@
+{
+  "model": "xgb_d4",
+  "fold": 2,
+  "params": {
+    "library": "xgb",
+    "depth": 4,
+    "rounds": 5000,
+    "eta": 0.025,
+    "alpha": 3.0,
+    "reg_lambda": 10.0,
+    "gamma": 0.1,
+    "subsample": 0.9
+  },
+  "iterations": 1368,
+  "auc": 0.9457871108900311,
+  "logloss": 0.21885599195957184,
+  "blend_v2_auc": 0.9459022666589805,
+  "seconds": 26.064181566238403,
+  "features": 130,
+  "validation_note": "Outer-fold early stopping introduces selection optimism."
+}

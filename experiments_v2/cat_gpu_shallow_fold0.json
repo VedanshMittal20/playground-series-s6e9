@@ -1,0 +1,7 @@
+{
+  "model": "cat_gpu_shallow",
+  "fold": 0,
+  "auc": 0.9447980767344696,
+  "baseline_auc": 0.9414146186089439,
+  "seconds": 69.50267696380615
+}

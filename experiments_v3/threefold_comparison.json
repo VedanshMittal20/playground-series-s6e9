@@ -1,0 +1,16 @@
+{
+  "weights": {
+    "v2": 0.25,
+    "xgb_d4": 0.125,
+    "lgb_d4": 0.125,
+    "heuljax_xgb": 0.5
+  },
+  "auc": 0.9460865424887069,
+  "baseline_auc": 0.9456975802308281,
+  "paired_auc_difference": 0.0003889622578788776,
+  "approx_95pct_ci": [
+    0.0003429403316491834,
+    0.00043498418410857183
+  ],
+  "caveat": "Paired DeLong variance treats fitted predictions as fixed; model selection and overlapping CV training are not accounted for."
+}

@@ -1,0 +1,43 @@
+{
+  "scheme": "three",
+  "selected": "lgb_combined_half",
+  "weights": {
+    "anchor": 0.5,
+    "lgb_combined": 0.5
+  },
+  "candidate_auc": {
+    "anchor": 0.9462097554409025,
+    "lgb_combined": 0.9461907052802079,
+    "lgb_combined_quarter": 0.946234963445426,
+    "lgb_combined_half": 0.9462401218896583
+  },
+  "fold_auc": {
+    "anchor": [
+      0.9458828055020002,
+      0.9466513287036274,
+      0.9461073986972584
+    ],
+    "lgb_combined": [
+      0.94585260785932,
+      0.9466479361155904,
+      0.9460804949741873
+    ],
+    "lgb_combined_quarter": [
+      0.9459081811125722,
+      0.9466788917009276,
+      0.9461297281380481
+    ],
+    "lgb_combined_half": [
+      0.945911413861213,
+      0.9466871209682546,
+      0.9461324074084062
+    ]
+  },
+  "auc_improvement": 3.036644875586969e-05,
+  "approx_paired_difference_ci95": [
+    1.427454132944663e-05,
+    4.645835618229275e-05
+  ],
+  "limitations": "Method and blend selection reuse labels; approximate fixed-prediction interval omits this selection and CV training dependence.",
+  "prediction_method": "Mean test probabilities across folds for each new learner, then a weighted logit blend with the preserved XGB anchor."
+}

@@ -1,0 +1,148 @@
+[
+  {
+    "model": "additive_7000",
+    "fold": 0,
+    "auc": 0.9445996599790232,
+    "derived_from": "First 7000 trees of additive_long fold 0; same training run"
+  },
+  {
+    "model": "additive_7000",
+    "fold": 1,
+    "auc": 0.9454301264631864,
+    "baseline_auc": 0.9422039005034047,
+    "seconds": 101.09744811058044
+  },
+  {
+    "model": "additive_7000",
+    "fold": 2,
+    "auc": 0.9449722452196728,
+    "baseline_auc": 0.9416666482844458,
+    "seconds": 65.43785786628723
+  },
+  {
+    "model": "additive_digits",
+    "fold": 0,
+    "auc": 0.9447841489641056,
+    "baseline_auc": 0.9414146186089439,
+    "seconds": 276.6697392463684
+  },
+  {
+    "model": "additive_digits",
+    "fold": 1,
+    "auc": 0.9455169618584787,
+    "baseline_auc": 0.9422039005034047,
+    "seconds": 61.86451816558838
+  },
+  {
+    "model": "additive_digits",
+    "fold": 2,
+    "auc": 0.9450673576416199,
+    "baseline_auc": 0.9416666482844458,
+    "seconds": 54.22437834739685
+  },
+  {
+    "model": "additive_fine",
+    "fold": 0,
+    "auc": 0.9447286399468952,
+    "baseline_auc": 0.9414146186089439,
+    "seconds": 39.016770362854004
+  },
+  {
+    "model": "additive",
+    "fold": 0,
+    "auc": 0.9444586476229598,
+    "baseline_auc": 0.9414146186089439,
+    "seconds": 48.07162380218506
+  },
+  {
+    "model": "additive_long",
+    "fold": 0,
+    "auc": 0.944576924050851,
+    "baseline_auc": 0.9414146186089439,
+    "prediction_seconds": 5.9114508628845215
+  },
+  {
+    "model": "additive_original",
+    "fold": 0,
+    "auc": 0.9444091645050732,
+    "baseline_auc": 0.9414146186089439,
+    "seconds": 74.63818073272705
+  },
+  {
+    "model": "cat_exact",
+    "fold": 0,
+    "auc": 0.9448354689535092,
+    "baseline_auc": 0.9414146186089439,
+    "seconds": 598.3397693634033
+  },
+  {
+    "model": "cat_gpu",
+    "fold": 0,
+    "auc": 0.9446897476766288,
+    "baseline_auc": 0.9414146186089439,
+    "seconds": 44.19236493110657
+  },
+  {
+    "model": "cat_gpu",
+    "fold": 1,
+    "auc": 0.945452277155615,
+    "baseline_auc": 0.9422039005034047,
+    "seconds": 52.27980589866638
+  },
+  {
+    "model": "cat_gpu",
+    "fold": 2,
+    "auc": 0.9447430322859596,
+    "baseline_auc": 0.9416666482844458,
+    "seconds": 35.98161458969116
+  },
+  {
+    "model": "cat_gpu_shallow",
+    "fold": 0,
+    "auc": 0.9447980767344696,
+    "baseline_auc": 0.9414146186089439,
+    "seconds": 69.50267696380615
+  },
+  {
+    "model": "cat_gpu_shallow",
+    "fold": 1,
+    "auc": 0.9456341171652484,
+    "baseline_auc": 0.9422039005034047,
+    "seconds": 53.20215082168579
+  },
+  {
+    "model": "cat_gpu_shallow",
+    "fold": 2,
+    "auc": 0.9449359181064338,
+    "baseline_auc": 0.9416666482844458,
+    "seconds": 47.650792598724365
+  },
+  {
+    "model": "lgb_exact",
+    "fold": 0,
+    "auc": 0.9388674763969628,
+    "baseline_auc": 0.9414146186089439,
+    "seconds": 25.915419578552246
+  },
+  {
+    "model": "logistic",
+    "fold": 0,
+    "auc": 0.9434518497424229,
+    "baseline_auc": 0.9414146186089439,
+    "seconds": 53.80983018875122
+  },
+  {
+    "model": "logistic_loose",
+    "fold": 0,
+    "auc": 0.9428442347361967,
+    "baseline_auc": 0.9414146186089439,
+    "seconds": 88.47924590110779
+  },
+  {
+    "model": "target_encoded",
+    "fold": 0,
+    "auc": 0.9391485430843788,
+    "baseline_auc": 0.9414146186089439,
+    "seconds": 39.4218475818634
+  }
+]

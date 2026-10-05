@@ -1,0 +1,19 @@
+{
+  "model": "gam_smooth_r1_s100",
+  "fold": 0,
+  "params": {
+    "ridge": 1.0,
+    "smooth": 100.0
+  },
+  "auc": 0.9426923853408999,
+  "logloss": 0.2252017532958414,
+  "blend_v2_auc": 0.9448619294549747,
+  "optimization": {
+    "success": true,
+    "iterations": 126,
+    "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+    "objective": 0.22664248434355805,
+    "max_gradient": 1.9663601663849605e-09
+  },
+  "seconds": 9.532409906387329
+}

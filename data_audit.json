@@ -1,0 +1,37 @@
+{
+  "train_rows": 668665,
+  "test_rows": 286571,
+  "feature_count": 13,
+  "target_counts": {
+    "No": 551886,
+    "Yes": 116779
+  },
+  "target_mapping": {
+    "No": 0,
+    "Yes": 1
+  },
+  "positive_rate": 0.17464500160768098,
+  "train_missing": 0,
+  "test_missing": 0,
+  "duplicate_train_feature_rows": 0,
+  "features": [
+    "Age",
+    "Annual_Income_USD",
+    "Daily_Commute_km",
+    "Number_of_Cars_Owned",
+    "Charging_Stations_Near_Home",
+    "Charging_Stations_Near_Work",
+    "Environmental_Concern_Level",
+    "Gender",
+    "City_Type",
+    "Current_Car_Type",
+    "Home_Charging_Possible",
+    "Subsidy_Available",
+    "Range_Anxiety_Level"
+  ],
+  "sha256": {
+    "train.csv": "eae9eaa4e6378df405e755f853771d7e26d212bd93258349fc797b771021946a",
+    "test.csv": "539263f6caabc40afd5e2f0bc0ab16b10a2d1177c565fc71b866f0181d836b34",
+    "sample_submission.csv": "a9747a8b947e4e35505e3da4535a5a494978b012a7adb50973f13e598849dda5"
+  }
+}

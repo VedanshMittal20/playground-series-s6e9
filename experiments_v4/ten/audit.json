@@ -1,0 +1,140 @@
+{
+  "status": "passed",
+  "folds": [
+    {
+      "model": "lgb_combined",
+      "fold": 0,
+      "trees": 900,
+      "auc": 0.9461059456490188
+    },
+    {
+      "model": "lgb_combined",
+      "fold": 1,
+      "trees": 900,
+      "auc": 0.9456062475448495
+    },
+    {
+      "model": "lgb_combined",
+      "fold": 2,
+      "trees": 900,
+      "auc": 0.9463749522724803
+    },
+    {
+      "model": "lgb_combined",
+      "fold": 3,
+      "trees": 900,
+      "auc": 0.9451307295323895
+    },
+    {
+      "model": "lgb_combined",
+      "fold": 4,
+      "trees": 900,
+      "auc": 0.9475614214593366
+    },
+    {
+      "model": "lgb_combined",
+      "fold": 5,
+      "trees": 900,
+      "auc": 0.9480067493371276
+    },
+    {
+      "model": "lgb_combined",
+      "fold": 6,
+      "trees": 900,
+      "auc": 0.9470558687418279
+    },
+    {
+      "model": "lgb_combined",
+      "fold": 7,
+      "trees": 900,
+      "auc": 0.9458152201241888
+    },
+    {
+      "model": "lgb_combined",
+      "fold": 8,
+      "trees": 900,
+      "auc": 0.9457393766758408
+    },
+    {
+      "model": "lgb_combined",
+      "fold": 9,
+      "trees": 900,
+      "auc": 0.9466699283073357
+    },
+    {
+      "model": "lgb_linear",
+      "fold": 0,
+      "trees": 600,
+      "auc": 0.9460918959358241
+    },
+    {
+      "model": "lgb_linear",
+      "fold": 1,
+      "trees": 600,
+      "auc": 0.9456095602050009
+    },
+    {
+      "model": "lgb_linear",
+      "fold": 2,
+      "trees": 600,
+      "auc": 0.9463972114867811
+    },
+    {
+      "model": "lgb_linear",
+      "fold": 3,
+      "trees": 600,
+      "auc": 0.94512797079246
+    },
+    {
+      "model": "lgb_linear",
+      "fold": 4,
+      "trees": 600,
+      "auc": 0.9475317269909631
+    },
+    {
+      "model": "lgb_linear",
+      "fold": 5,
+      "trees": 600,
+      "auc": 0.9479603681233335
+    },
+    {
+      "model": "lgb_linear",
+      "fold": 6,
+      "trees": 600,
+      "auc": 0.9469829516589376
+    },
+    {
+      "model": "lgb_linear",
+      "fold": 7,
+      "trees": 600,
+      "auc": 0.9458469446566137
+    },
+    {
+      "model": "lgb_linear",
+      "fold": 8,
+      "trees": 600,
+      "auc": 0.9457377862598311
+    },
+    {
+      "model": "lgb_linear",
+      "fold": 9,
+      "trees": 600,
+      "auc": 0.9466479805664011
+    }
+  ],
+  "input_sha256": {
+    "train.csv": "eae9eaa4e6378df405e755f853771d7e26d212bd93258349fc797b771021946a",
+    "test.csv": "539263f6caabc40afd5e2f0bc0ab16b10a2d1177c565fc71b866f0181d836b34",
+    "sample_submission.csv": "a9747a8b947e4e35505e3da4535a5a494978b012a7adb50973f13e598849dda5"
+  },
+  "submission_sha256": "e0c2bb6507b292cda738c56b6c9b45082accdf3d3dd1cf34403d3029ff19d62e",
+  "checks": [
+    "unchanged inputs and ID/label alignment",
+    "one held-out prediction per row for both learners",
+    "all twenty saved model tree counts match frozen training lengths",
+    "recorded AUC matches prediction arrays",
+    "saved-model test inference agrees on 120 dispersed rows for both learners",
+    "initial margins added once and saved linear scaling reapplied",
+    "CSV schema, IDs, bounds and hash"
+  ]
+}

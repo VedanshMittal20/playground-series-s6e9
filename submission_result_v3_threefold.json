@@ -1,0 +1,24 @@
+{
+  "competition": "playground-series-s6e9",
+  "submission_id": 56619270,
+  "file": "submission_v3_threefold.csv",
+  "submitted_at_utc": "2026-09-27 20:59:03.680000",
+  "status": "COMPLETE",
+  "public_score": 0.94636,
+  "previous_public_score": 0.94597,
+  "checked_at_utc": "2026-09-27T21:00:16.317246+00:00",
+  "leaderboard_file": "playground-series-s6e9-publicleaderboard-2026-09-27T20:59:42.csv",
+  "leaderboard_team": [
+    {
+      "Rank": 689,
+      "TeamId": 16946312,
+      "TeamName": "himanshu mittal",
+      "LastSubmissionDate": "2026-09-27 20:59:03",
+      "Score": 0.94636,
+      "SubmissionCount": 3,
+      "TeamMemberUserNames": "tumsbkabaap,vedanshmittal2076"
+    }
+  ],
+  "total_teams": 3215,
+  "sha256": "e007897854812e4301865a0008d39923d900313dae4ca982bef0b4f49db9015c"
+}

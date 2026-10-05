@@ -1,0 +1,71 @@
+{
+  "oof_auc": {
+    "lightgbm": 0.9415861539761554,
+    "catboost": 0.9415544674386106,
+    "blend": 0.9417545002315348
+  },
+  "fold_auc": {
+    "lightgbm": [
+      0.9412574651319356,
+      0.9420238625006874,
+      0.9414968413212303
+    ],
+    "catboost": [
+      0.9412006586164964,
+      0.9420123072570177,
+      0.9414684178879712
+    ]
+  },
+  "selected": "blend",
+  "validation": "3 stratified folds, seed 2026; fixed iterations; no early stopping",
+  "limitation": "Model selection on these folds introduces optimism; no independent final holdout.",
+  "prediction_method": "Average predictions of the three fold models",
+  "parameters": {
+    "lightgbm": {
+      "n_estimators": 700,
+      "learning_rate": 0.05,
+      "num_leaves": 31,
+      "min_child_samples": 100,
+      "colsample_bytree": 0.9,
+      "reg_lambda": 5.0,
+      "random_state": 2026,
+      "n_jobs": 8,
+      "verbosity": -1
+    },
+    "catboost": {
+      "iterations": 600,
+      "learning_rate": 0.07,
+      "depth": 6,
+      "loss_function": "Logloss",
+      "l2_leaf_reg": 5,
+      "random_seed": 2026,
+      "thread_count": 8,
+      "allow_writing_files": false,
+      "verbose": false
+    }
+  },
+  "categorical_features": [
+    "Gender",
+    "City_Type",
+    "Current_Car_Type",
+    "Home_Charging_Possible",
+    "Subsidy_Available",
+    "Range_Anxiety_Level"
+  ],
+  "train_rows": 668665,
+  "test_rows": 286571,
+  "positive_rate": 0.17464500160768098,
+  "seconds": 203.52891945838928,
+  "versions": {
+    "lightgbm": "4.7.0",
+    "catboost": "1.2.10",
+    "sklearn": "1.9.1",
+    "pandas": "3.0.6",
+    "numpy": "2.5.3"
+  },
+  "input_sha256": {
+    "train.csv": "eae9eaa4e6378df405e755f853771d7e26d212bd93258349fc797b771021946a",
+    "test.csv": "539263f6caabc40afd5e2f0bc0ab16b10a2d1177c565fc71b866f0181d836b34",
+    "sample_submission.csv": "a9747a8b947e4e35505e3da4535a5a494978b012a7adb50973f13e598849dda5"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "model": "cat_combined",
+  "scheme": "three",
+  "fold": 1,
+  "params": {
+    "iterations": 4000,
+    "depth": 4,
+    "learning_rate": 0.025,
+    "l2_leaf_reg": 15,
+    "loss_function": "Logloss",
+    "eval_metric": "AUC",
+    "task_type": "GPU",
+    "devices": "0",
+    "thread_count": 8,
+    "random_seed": 2027,
+    "one_hot_max_size": 20,
+    "verbose": 500,
+    "allow_writing_files": false
+  },
+  "iterations": 1777,
+  "auc": 0.9465118572225478,
+  "anchor_auc": 0.9466513282846859,
+  "quarter_blend_auc": 0.9466534848557346,
+  "seconds": 79.96448755264282,
+  "features": 522,
+  "validation_note": "Nested cached target features and margins; predictor-only train/test group summaries. Outer-fold early stopping in screening; fixed length when iterations is specified."
+}

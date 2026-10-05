@@ -1,0 +1,7 @@
+{
+  "model": "additive_digits",
+  "fold": 1,
+  "auc": 0.9455169618584787,
+  "baseline_auc": 0.9422039005034047,
+  "seconds": 61.86451816558838
+}

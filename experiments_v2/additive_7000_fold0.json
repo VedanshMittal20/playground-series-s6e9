@@ -1,0 +1,6 @@
+{
+  "model": "additive_7000",
+  "fold": 0,
+  "auc": 0.9445996599790232,
+  "derived_from": "First 7000 trees of additive_long fold 0; same training run"
+}

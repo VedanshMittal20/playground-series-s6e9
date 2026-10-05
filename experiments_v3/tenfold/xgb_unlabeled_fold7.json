@@ -1,0 +1,27 @@
+{
+  "model": "xgb_unlabeled",
+  "scheme": "ten",
+  "fold": 7,
+  "params": {
+    "objective": "binary:logistic",
+    "eval_metric": "auc",
+    "device": "cuda",
+    "tree_method": "hist",
+    "max_bin": 512,
+    "max_depth": 4,
+    "eta": 0.025,
+    "reg_alpha": 3.0,
+    "reg_lambda": 10.0,
+    "gamma": 0.1,
+    "min_child_weight": 5,
+    "subsample": 0.9,
+    "colsample_bytree": 0.85,
+    "nthread": 8,
+    "seed": 2033
+  },
+  "iterations": 1500,
+  "auc": 0.9456120960704866,
+  "logloss": 0.2192922681570053,
+  "seconds": 32.69699430465698,
+  "validation_note": "Fixed training length; shared training data with earlier selection so not a fresh holdout. Nested target encodings; unlabeled train/test predictor aggregates."
+}

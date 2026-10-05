@@ -1,0 +1,27 @@
+{
+  "source": "https://www.kaggle.com/datasets/itzzomkar/ev-adoption-behavior-and-range-anxiety",
+  "license": "CC0-1.0",
+  "rows": 10000,
+  "missing": {
+    "Buyer_ID": 0,
+    "Age": 0,
+    "Gender": 0,
+    "Annual_Income_USD": 178,
+    "City_Type": 0,
+    "Daily_Commute_km": 181,
+    "Number_of_Cars_Owned": 0,
+    "Current_Car_Type": 0,
+    "Charging_Stations_Near_Home": 0,
+    "Charging_Stations_Near_Work": 0,
+    "Home_Charging_Possible": 0,
+    "Environmental_Concern_Level": 184,
+    "Subsidy_Available": 0,
+    "Range_Anxiety_Level": 0,
+    "Will_Buy_EV": 0
+  },
+  "train_full_feature_matches": 0,
+  "test_full_feature_matches": 0,
+  "income_match_rate_train": 0.9794486028130678,
+  "income_match_rate_test": 0.9791849140352653,
+  "sha256": "c271a380df51b18177d0a039d54525ca7c3d71500701dc7496714a091df16fae"
+}

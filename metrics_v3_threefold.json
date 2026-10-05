@@ -1,0 +1,339 @@
+{
+  "scheme": "three",
+  "models": [
+    "heuljax_xgb",
+    "xgb_unlabeled",
+    "xgb_combined"
+  ],
+  "selected": "combined_unlabeled_equal",
+  "weights": {
+    "xgb_combined": 0.5,
+    "xgb_unlabeled": 0.5
+  },
+  "candidate_auc": {
+    "heuljax_xgb": 0.9459747616453815,
+    "xgb_unlabeled": 0.9460341068033943,
+    "xgb_combined": 0.946123700781715,
+    "equal_logit": 0.946195818572246,
+    "combined_half": 0.9461918941793744,
+    "combined_three_quarters": 0.9461897450280287,
+    "combined_unlabeled_equal": 0.946197235482235
+  },
+  "fold_auc": {
+    "heuljax_xgb": [
+      0.945605378624231,
+      0.9464617180977549,
+      0.9458629944570195
+    ],
+    "xgb_unlabeled": [
+      0.9456939300331038,
+      0.946496869940519,
+      0.9459303154887406
+    ],
+    "xgb_combined": [
+      0.9457995675309583,
+      0.9465836636511349,
+      0.9459990159550805
+    ],
+    "equal_logit": [
+      0.9458502885192692,
+      0.9466605148332755,
+      0.9460876872217249
+    ],
+    "combined_half": [
+      0.9458525401321887,
+      0.9466555044329223,
+      0.946078790022045
+    ],
+    "combined_three_quarters": [
+      0.9458620381292314,
+      0.9466441459520967,
+      0.9460745158415046
+    ],
+    "combined_unlabeled_equal": [
+      0.9458665300439411,
+      0.9466505035285756,
+      0.9460888708710292
+    ]
+  },
+  "baseline_auc": 0.9456975802308281,
+  "auc_improvement": 0.0004996552514069386,
+  "approx_paired_auc_difference_ci95": [
+    0.000431027029212006,
+    0.0005682834736018712
+  ],
+  "limitations": "All method/blend selection reuses training labels; not an independent holdout. Paired interval treats predictions as fixed and omits selection and CV training dependence.",
+  "transductive_features": "Predictor-only train/test group moments. No test labels or leaderboard probing.",
+  "prediction_method": "Mean test probabilities over fold models per family; weighted logit blend across families.",
+  "submission_rows": 286571,
+  "submission_file": "submission_v3_threefold.csv",
+  "submission_sha256": "e007897854812e4301865a0008d39923d900313dae4ca982bef0b4f49db9015c",
+  "input_sha256": {
+    "train.csv": "eae9eaa4e6378df405e755f853771d7e26d212bd93258349fc797b771021946a",
+    "test.csv": "539263f6caabc40afd5e2f0bc0ab16b10a2d1177c565fc71b866f0181d836b34",
+    "sample_submission.csv": "a9747a8b947e4e35505e3da4535a5a494978b012a7adb50973f13e598849dda5"
+  },
+  "fold_models": {
+    "heuljax_xgb": [
+      {
+        "model": "heuljax_xgb",
+        "fold": 0,
+        "params": {
+          "objective": "binary:logistic",
+          "eval_metric": "auc",
+          "base_score": 0.5,
+          "tree_method": "hist",
+          "device": "cuda:0",
+          "learning_rate": 0.015,
+          "max_depth": 5,
+          "max_bin": 256,
+          "colsample_bynode": 0.8,
+          "colsample_bytree": 1.0,
+          "subsample": 1.0,
+          "min_child_weight": 1.0,
+          "reg_alpha": 10.0,
+          "reg_lambda": 15.0,
+          "nthread": 8,
+          "monotone_constraints": "(0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,1,1,1,0,0,0,1,1,1,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,0)",
+          "seed": 2026
+        },
+        "iterations": 853,
+        "auc": 0.945605378624231,
+        "logloss": 0.21924075484275818,
+        "blend_v2_auc": 0.9456615561850318,
+        "seconds": 74.55011415481567,
+        "source": "https://www.kaggle.com/code/heuljax/kps6e09-xgb-sample",
+        "validation_note": "Outer-fold early stopping; original source data is external training data; nested donor folds exclude validation labels."
+      },
+      {
+        "model": "heuljax_xgb",
+        "fold": 1,
+        "params": {
+          "objective": "binary:logistic",
+          "eval_metric": "auc",
+          "base_score": 0.5,
+          "tree_method": "hist",
+          "device": "cuda:0",
+          "learning_rate": 0.015,
+          "max_depth": 5,
+          "max_bin": 256,
+          "colsample_bynode": 0.8,
+          "colsample_bytree": 1.0,
+          "subsample": 1.0,
+          "min_child_weight": 1.0,
+          "reg_alpha": 10.0,
+          "reg_lambda": 15.0,
+          "nthread": 8,
+          "monotone_constraints": "(0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,1,1,1,0,0,0,1,1,1,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,0)",
+          "seed": 2026
+        },
+        "iterations": 938,
+        "auc": 0.9464617180977549,
+        "logloss": 0.21767260134220123,
+        "blend_v2_auc": 0.9464737598022969,
+        "seconds": 85.28844094276428,
+        "source": "https://www.kaggle.com/code/heuljax/kps6e09-xgb-sample",
+        "validation_note": "Outer-fold early stopping; original source data is external training data; nested donor folds exclude validation labels."
+      },
+      {
+        "model": "heuljax_xgb",
+        "fold": 2,
+        "params": {
+          "objective": "binary:logistic",
+          "eval_metric": "auc",
+          "base_score": 0.5,
+          "tree_method": "hist",
+          "device": "cuda:0",
+          "learning_rate": 0.015,
+          "max_depth": 5,
+          "max_bin": 256,
+          "colsample_bynode": 0.8,
+          "colsample_bytree": 1.0,
+          "subsample": 1.0,
+          "min_child_weight": 1.0,
+          "reg_alpha": 10.0,
+          "reg_lambda": 15.0,
+          "nthread": 8,
+          "monotone_constraints": "(0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,1,1,1,0,0,0,1,1,1,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,0)",
+          "seed": 2026
+        },
+        "iterations": 836,
+        "auc": 0.9458629944570195,
+        "logloss": 0.21867825090885162,
+        "blend_v2_auc": 0.945897391995664,
+        "seconds": 69.41801381111145,
+        "source": "https://www.kaggle.com/code/heuljax/kps6e09-xgb-sample",
+        "validation_note": "Outer-fold early stopping; original source data is external training data; nested donor folds exclude validation labels."
+      }
+    ],
+    "xgb_unlabeled": [
+      {
+        "model": "xgb_unlabeled",
+        "fold": 0,
+        "params": {
+          "objective": "binary:logistic",
+          "eval_metric": "auc",
+          "device": "cuda",
+          "tree_method": "hist",
+          "max_bin": 512,
+          "max_depth": 4,
+          "eta": 0.025,
+          "reg_alpha": 3.0,
+          "reg_lambda": 10.0,
+          "gamma": 0.1,
+          "min_child_weight": 5,
+          "subsample": 0.9,
+          "colsample_bytree": 0.85,
+          "nthread": 8,
+          "seed": 2026
+        },
+        "iterations": 1482,
+        "auc": 0.9456939300331038,
+        "blend_v2_auc": 0.945785014366867,
+        "seconds": 25.363290071487427,
+        "validation_note": "Transductive predictor-only aggregates include validation/test features, never their labels; target encodings remain nested cross-fitted; outer-fold early stopping."
+      },
+      {
+        "model": "xgb_unlabeled",
+        "fold": 1,
+        "params": {
+          "objective": "binary:logistic",
+          "eval_metric": "auc",
+          "device": "cuda",
+          "tree_method": "hist",
+          "max_bin": 512,
+          "max_depth": 4,
+          "eta": 0.025,
+          "reg_alpha": 3.0,
+          "reg_lambda": 10.0,
+          "gamma": 0.1,
+          "min_child_weight": 5,
+          "subsample": 0.9,
+          "colsample_bytree": 0.85,
+          "nthread": 8,
+          "seed": 2026
+        },
+        "iterations": 1089,
+        "auc": 0.946496869940519,
+        "blend_v2_auc": 0.9465780899141492,
+        "seconds": 21.668606996536255,
+        "validation_note": "Transductive predictor-only aggregates include validation/test features, never their labels; target encodings remain nested cross-fitted; outer-fold early stopping."
+      },
+      {
+        "model": "xgb_unlabeled",
+        "fold": 2,
+        "params": {
+          "objective": "binary:logistic",
+          "eval_metric": "auc",
+          "device": "cuda",
+          "tree_method": "hist",
+          "max_bin": 512,
+          "max_depth": 4,
+          "eta": 0.025,
+          "reg_alpha": 3.0,
+          "reg_lambda": 10.0,
+          "gamma": 0.1,
+          "min_child_weight": 5,
+          "subsample": 0.9,
+          "colsample_bytree": 0.85,
+          "nthread": 8,
+          "seed": 2026
+        },
+        "iterations": 1603,
+        "auc": 0.9459303154887406,
+        "blend_v2_auc": 0.9460171112242403,
+        "seconds": 39.074512243270874,
+        "validation_note": "Transductive predictor-only aggregates include validation/test features, never their labels; target encodings remain nested cross-fitted; outer-fold early stopping."
+      }
+    ],
+    "xgb_combined": [
+      {
+        "model": "xgb_combined",
+        "fold": 0,
+        "params": {
+          "objective": "binary:logistic",
+          "eval_metric": "auc",
+          "base_score": 0.5,
+          "tree_method": "hist",
+          "device": "cuda:0",
+          "learning_rate": 0.025,
+          "max_depth": 4,
+          "max_bin": 256,
+          "colsample_bynode": 0.8,
+          "colsample_bytree": 1.0,
+          "subsample": 1.0,
+          "min_child_weight": 1.0,
+          "reg_alpha": 5.0,
+          "reg_lambda": 15.0,
+          "nthread": 8,
+          "monotone_constraints": "(0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,1,1,1,0,0,0,1,1,1,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)",
+          "seed": 2026
+        },
+        "iterations": 834,
+        "auc": 0.9457995675309583,
+        "blend_v2_auc": 0.9457858152227399,
+        "seconds": 33.87227463722229,
+        "features": 396,
+        "validation_note": "Donor-only target encodings, transductive predictor-only group moments, outer-fold early stopping."
+      },
+      {
+        "model": "xgb_combined",
+        "fold": 1,
+        "params": {
+          "objective": "binary:logistic",
+          "eval_metric": "auc",
+          "base_score": 0.5,
+          "tree_method": "hist",
+          "device": "cuda:0",
+          "learning_rate": 0.025,
+          "max_depth": 4,
+          "max_bin": 256,
+          "colsample_bynode": 0.8,
+          "colsample_bytree": 1.0,
+          "subsample": 1.0,
+          "min_child_weight": 1.0,
+          "reg_alpha": 5.0,
+          "reg_lambda": 15.0,
+          "nthread": 8,
+          "monotone_constraints": "(0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,1,1,1,0,0,0,1,1,1,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)",
+          "seed": 2026
+        },
+        "iterations": 543,
+        "auc": 0.9465836636511349,
+        "blend_v2_auc": 0.946554477255632,
+        "seconds": 37.48707962036133,
+        "features": 396,
+        "validation_note": "Donor-only target encodings, transductive predictor-only group moments, outer-fold early stopping."
+      },
+      {
+        "model": "xgb_combined",
+        "fold": 2,
+        "params": {
+          "objective": "binary:logistic",
+          "eval_metric": "auc",
+          "base_score": 0.5,
+          "tree_method": "hist",
+          "device": "cuda:0",
+          "learning_rate": 0.025,
+          "max_depth": 4,
+          "max_bin": 256,
+          "colsample_bynode": 0.8,
+          "colsample_bytree": 1.0,
+          "subsample": 1.0,
+          "min_child_weight": 1.0,
+          "reg_alpha": 5.0,
+          "reg_lambda": 15.0,
+          "nthread": 8,
+          "monotone_constraints": "(0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,1,1,1,0,0,0,1,1,1,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)",
+          "seed": 2026
+        },
+        "iterations": 514,
+        "auc": 0.9459990159550805,
+        "blend_v2_auc": 0.9459758023383149,
+        "seconds": 26.581446170806885,
+        "features": 396,
+        "validation_note": "Donor-only target encodings, transductive predictor-only group moments, outer-fold early stopping."
+      }
+    ]
+  }
+}

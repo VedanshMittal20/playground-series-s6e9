@@ -1,0 +1,26 @@
+{
+  "model": "xgb_unlabeled",
+  "fold": 2,
+  "params": {
+    "objective": "binary:logistic",
+    "eval_metric": "auc",
+    "device": "cuda",
+    "tree_method": "hist",
+    "max_bin": 512,
+    "max_depth": 4,
+    "eta": 0.025,
+    "reg_alpha": 3.0,
+    "reg_lambda": 10.0,
+    "gamma": 0.1,
+    "min_child_weight": 5,
+    "subsample": 0.9,
+    "colsample_bytree": 0.85,
+    "nthread": 8,
+    "seed": 2026
+  },
+  "iterations": 1603,
+  "auc": 0.9459303154887406,
+  "blend_v2_auc": 0.9460171112242403,
+  "seconds": 39.074512243270874,
+  "validation_note": "Transductive predictor-only aggregates include validation/test features, never their labels; target encodings remain nested cross-fitted; outer-fold early stopping."
+}

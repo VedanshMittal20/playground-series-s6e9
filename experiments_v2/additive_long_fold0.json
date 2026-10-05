@@ -1,0 +1,7 @@
+{
+  "model": "additive_long",
+  "fold": 0,
+  "auc": 0.944576924050851,
+  "baseline_auc": 0.9414146186089439,
+  "prediction_seconds": 5.9114508628845215
+}

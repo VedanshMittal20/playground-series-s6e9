@@ -1,0 +1,30 @@
+{
+  "model": "heuljax_xgb",
+  "fold": 0,
+  "params": {
+    "objective": "binary:logistic",
+    "eval_metric": "auc",
+    "base_score": 0.5,
+    "tree_method": "hist",
+    "device": "cuda:0",
+    "learning_rate": 0.015,
+    "max_depth": 5,
+    "max_bin": 256,
+    "colsample_bynode": 0.8,
+    "colsample_bytree": 1.0,
+    "subsample": 1.0,
+    "min_child_weight": 1.0,
+    "reg_alpha": 10.0,
+    "reg_lambda": 15.0,
+    "nthread": 8,
+    "monotone_constraints": "(0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,1,1,1,0,0,0,1,1,1,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,0)",
+    "seed": 2026
+  },
+  "iterations": 853,
+  "auc": 0.945605378624231,
+  "logloss": 0.21924075484275818,
+  "blend_v2_auc": 0.9456615561850318,
+  "seconds": 74.55011415481567,
+  "source": "https://www.kaggle.com/code/heuljax/kps6e09-xgb-sample",
+  "validation_note": "Outer-fold early stopping; original source data is external training data; nested donor folds exclude validation labels."
+}

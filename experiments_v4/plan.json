@@ -1,0 +1,46 @@
+{
+  "created_at_utc": "2026-09-29T00:12:39.622197+00:00",
+  "purpose": "Confirm diversity-model gains using fixed training lengths on ten folds.",
+  "models": {
+    "lgb_combined": {
+      "iterations": 900,
+      "basis": "Three-fold best iterations 1183, 769, 606; freeze 900 for final confirmation."
+    },
+    "lgb_linear": {
+      "iterations": 600,
+      "basis": "Three-fold best iterations 620, 572, 444; freeze 600 for final confirmation. Quarter blend improved all three folds."
+    },
+    "cat_combined": {
+      "status": "rejected",
+      "basis": "Three-fold quarter-blend improvement only 0.000001466; insufficient practical gain."
+    }
+  },
+  "validation": "Reuse existing nested feature caches, unchanged data and fold assignments. No outer-fold early stopping in ten-fold confirmation.",
+  "selection": "Small fixed blend menu against preserved submission_v3 OOF and test predictions; no leaderboard-based weight tuning.",
+  "resume_2026_09_30": {
+    "verified_at_utc": "2026-09-30T05:23:55.677703+00:00",
+    "prior_turn_classification": "progress: completed all V3 folds, submitted improved candidate and screened V4 learners",
+    "prior_process_state": "Both old exec handles missing; no live Python process; only combined fold 0 saved in ten-fold V4.",
+    "action": "Resume missing folds sequentially. Memory-mapped feature reads and blockwise/in-place linear scaling reduce peak memory; model parameters remain frozen."
+  },
+  "standard_tenfold_confirmation": {
+    "selected": "lgb_combined_half",
+    "weights": {
+      "anchor": 0.5,
+      "lgb_combined": 0.5
+    },
+    "candidate_auc": {
+      "anchor": 0.946401726852624,
+      "lgb_combined": 0.9464026457385659,
+      "lgb_combined_quarter": 0.9464177405360179,
+      "lgb_combined_half": 0.9464231982415454
+    },
+    "auc_improvement": 2.1471388921390222e-05,
+    "approx_paired_difference_ci95": [
+      9.955247414176183e-06,
+      3.298753042860426e-05
+    ],
+    "limitations": "Method and blend selection reuse labels; approximate fixed-prediction interval omits this selection and CV training dependence.",
+    "completed_at_utc": "2026-09-30T05:37:33.213967+00:00"
+  }
+}

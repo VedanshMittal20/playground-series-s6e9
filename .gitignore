@@ -1,0 +1,29 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.log
+.env
+.env.*
+.kaggle/
+kaggle.json
+access_token
+
+# Competition inputs and downloaded source data
+data/*.csv
+data/*.zip
+original/*
+!original/provenance.json
+references/*
+!references/provenance.json
+leaderboard/
+
+# Regenerable predictions, model binaries, and training caches
+outputs/
+experiments_v*/**/*.npz
+experiments_v*/**/*.joblib
+experiments_v*/**/*.ubj
+experiments_v*/**/*.cbm
+experiments_v*/**/*.csv
+experiments_v*/**/*.txt
+submission*.csv
+!submission_v4.csv

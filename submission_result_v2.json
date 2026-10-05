@@ -1,0 +1,26 @@
+{
+  "competition": "playground-series-s6e9",
+  "submission_id": 56540777,
+  "file": "submission_v2.csv",
+  "submitted_at_utc": "2026-09-25 05:16:33.327000",
+  "description": "Equal logit blend: additive income-digit LightGBM + depth4 GPU CatBoost; 3-fold OOF AUC 0.945698",
+  "status": "COMPLETE",
+  "public_score": 0.94597,
+  "previous_public_score": 0.9415,
+  "improvement": 0.00447,
+  "sha256": "30ac836c3763572b3fbcf38af0d4be8260fa4ea7602546227777cc5c3c20e9a0",
+  "checked_at_utc": "2026-09-25T05:17:45.561601+00:00",
+  "leaderboard_file": "playground-series-s6e9-publicleaderboard-2026-09-25T05:17:28.csv",
+  "leaderboard_team": [
+    {
+      "Rank": 951,
+      "TeamId": 16946312,
+      "TeamName": "himanshu mittal",
+      "LastSubmissionDate": "2026-09-25 05:16:33",
+      "Score": 0.94597,
+      "SubmissionCount": 2,
+      "TeamMemberUserNames": "tumsbkabaap,vedanshmittal2076"
+    }
+  ],
+  "total_teams": 2934
+}

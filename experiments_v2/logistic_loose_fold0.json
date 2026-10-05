@@ -1,0 +1,7 @@
+{
+  "model": "logistic_loose",
+  "fold": 0,
+  "auc": 0.9428442347361967,
+  "baseline_auc": 0.9414146186089439,
+  "seconds": 88.47924590110779
+}

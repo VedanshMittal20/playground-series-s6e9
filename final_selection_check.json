@@ -1,0 +1,14 @@
+{
+  "checked_at_utc": "2026-09-30T05:36:10.946715+00:00",
+  "source": "Visible Kaggle submissions page in authenticated browser",
+  "url": "https://www.kaggle.com/competitions/playground-series-s6e9/submissions",
+  "manual_selections": 0,
+  "maximum_final_submissions": 2,
+  "mode": "automatic",
+  "observed_policy": "If fewer than 2 are selected, Kaggle automatically selects from best-scoring submissions.",
+  "best_visible_submission": "submission_v3.csv",
+  "best_visible_public_score": 0.94644,
+  "deadline_utc": "2026-09-30T23:59:00Z",
+  "deadline_verification": "Kaggle CLI competition listing and visible browser deadline tooltip agree.",
+  "changes_made": false
+}

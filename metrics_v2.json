@@ -1,0 +1,46 @@
+{
+  "selected": "equal_logit_blend",
+  "source_models": [
+    "additive_digits",
+    "cat_gpu_shallow"
+  ],
+  "oof_auc": {
+    "additive_digits": 0.9451247935066146,
+    "cat_gpu_shallow": 0.9451182538552109,
+    "equal_probability_blend": 0.9456461933254758,
+    "equal_logit_blend": 0.9456975802308281
+  },
+  "fold_auc": {
+    "additive_digits": [
+      0.9447841489641056,
+      0.9455169618584787,
+      0.9450673576416199
+    ],
+    "cat_gpu_shallow": [
+      0.9447980767344696,
+      0.9456341171652484,
+      0.9449359181064338
+    ],
+    "equal_probability_blend": [
+      0.9453226434754429,
+      0.9461009687835522,
+      0.9455155262857026
+    ],
+    "equal_logit_blend": [
+      0.945375877838545,
+      0.946153857630694,
+      0.9455633395172689
+    ]
+  },
+  "baseline_auc": 0.9417545002315348,
+  "baseline_fold_auc": [
+    0.9414146186089439,
+    0.9422039005034047,
+    0.9416666482844458
+  ],
+  "improvement": 0.00394307999929322,
+  "limitations": "Fold 0 was used for screening. All folds were used for final model/blend selection; this is not an independent final holdout.",
+  "test_prediction_method": "Equal average over three fold models; chosen blend if applicable",
+  "submission_rows": 286571,
+  "submission_sha256": "30ac836c3763572b3fbcf38af0d4be8260fa4ea7602546227777cc5c3c20e9a0"
+}

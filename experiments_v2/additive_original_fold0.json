@@ -1,0 +1,7 @@
+{
+  "model": "additive_original",
+  "fold": 0,
+  "auc": 0.9444091645050732,
+  "baseline_auc": 0.9414146186089439,
+  "seconds": 74.63818073272705
+}

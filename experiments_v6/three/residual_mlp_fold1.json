@@ -1,0 +1,197 @@
+{
+  "model": "residual_mlp",
+  "scheme": "three",
+  "fold": 1,
+  "epochs": 17,
+  "max_epochs": 35,
+  "fixed": false,
+  "auc": 0.9465496568452361,
+  "anchor_auc": 0.9466513289130983,
+  "quarter_blend_auc": 0.9467124143501322,
+  "history": [
+    {
+      "epoch": 1,
+      "auc": 0.9461931536424955,
+      "validation_logloss": 0.21837855875492096,
+      "training_loss": 0.22123434004980488,
+      "seconds": 2.331540822982788
+    },
+    {
+      "epoch": 2,
+      "auc": 0.946361533411764,
+      "validation_logloss": 0.21797680854797363,
+      "training_loss": 0.21970335018197332,
+      "seconds": 2.125019073486328
+    },
+    {
+      "epoch": 3,
+      "auc": 0.9462629582989072,
+      "validation_logloss": 0.21813906729221344,
+      "training_loss": 0.21938427394136376,
+      "seconds": 2.0771472454071045
+    },
+    {
+      "epoch": 4,
+      "auc": 0.9464197458180093,
+      "validation_logloss": 0.2178739309310913,
+      "training_loss": 0.2193485544909031,
+      "seconds": 2.1214566230773926
+    },
+    {
+      "epoch": 5,
+      "auc": 0.9462552877598563,
+      "validation_logloss": 0.2182839959859848,
+      "training_loss": 0.21928074750878396,
+      "seconds": 2.0375308990478516
+    },
+    {
+      "epoch": 6,
+      "auc": 0.9464356461829757,
+      "validation_logloss": 0.21777614951133728,
+      "training_loss": 0.219089712981784,
+      "seconds": 2.0981626510620117
+    },
+    {
+      "epoch": 7,
+      "auc": 0.946123691191442,
+      "validation_logloss": 0.2186301201581955,
+      "training_loss": 0.2190216275256708,
+      "seconds": 2.0617637634277344
+    },
+    {
+      "epoch": 8,
+      "auc": 0.9462084659532826,
+      "validation_logloss": 0.21828864514827728,
+      "training_loss": 0.2189898690499297,
+      "seconds": 2.0540966987609863
+    },
+    {
+      "epoch": 9,
+      "auc": 0.9464626723766036,
+      "validation_logloss": 0.2177712619304657,
+      "training_loss": 0.21882920527676925,
+      "seconds": 2.0671122074127197
+    },
+    {
+      "epoch": 10,
+      "auc": 0.9465077457309455,
+      "validation_logloss": 0.21765446662902832,
+      "training_loss": 0.21874174735414872,
+      "seconds": 2.0692131519317627
+    },
+    {
+      "epoch": 11,
+      "auc": 0.946469382981096,
+      "validation_logloss": 0.21779155731201172,
+      "training_loss": 0.21865905493224433,
+      "seconds": 2.066514253616333
+    },
+    {
+      "epoch": 12,
+      "auc": 0.9464156906740349,
+      "validation_logloss": 0.2178482711315155,
+      "training_loss": 0.21860845592043815,
+      "seconds": 2.14333438873291
+    },
+    {
+      "epoch": 13,
+      "auc": 0.9464263646743193,
+      "validation_logloss": 0.21778437495231628,
+      "training_loss": 0.21850078532455164,
+      "seconds": 2.0742034912109375
+    },
+    {
+      "epoch": 14,
+      "auc": 0.9463473775190855,
+      "validation_logloss": 0.2182021141052246,
+      "training_loss": 0.2184904242327454,
+      "seconds": 2.301476240158081
+    },
+    {
+      "epoch": 15,
+      "auc": 0.9465444799156478,
+      "validation_logloss": 0.21755394339561462,
+      "training_loss": 0.218347028991498,
+      "seconds": 2.214179754257202
+    },
+    {
+      "epoch": 16,
+      "auc": 0.9464809003803861,
+      "validation_logloss": 0.21774543821811676,
+      "training_loss": 0.21820447327346976,
+      "seconds": 2.171808958053589
+    },
+    {
+      "epoch": 17,
+      "auc": 0.9465496568452361,
+      "validation_logloss": 0.21758776903152466,
+      "training_loss": 0.21812978140804745,
+      "seconds": 2.1807379722595215
+    },
+    {
+      "epoch": 18,
+      "auc": 0.9463795665379389,
+      "validation_logloss": 0.21786631643772125,
+      "training_loss": 0.2179581492865851,
+      "seconds": 2.3929495811462402
+    },
+    {
+      "epoch": 19,
+      "auc": 0.9465046442374075,
+      "validation_logloss": 0.21764935553073883,
+      "training_loss": 0.21786774804285908,
+      "seconds": 2.355661392211914
+    },
+    {
+      "epoch": 20,
+      "auc": 0.9464302426060514,
+      "validation_logloss": 0.2178322821855545,
+      "training_loss": 0.21770258712659188,
+      "seconds": 2.2023797035217285
+    },
+    {
+      "epoch": 21,
+      "auc": 0.9464460171489287,
+      "validation_logloss": 0.21775001287460327,
+      "training_loss": 0.21770885080919353,
+      "seconds": 2.5464987754821777
+    },
+    {
+      "epoch": 22,
+      "auc": 0.9463967957154296,
+      "validation_logloss": 0.21786382794380188,
+      "training_loss": 0.21760977900356326,
+      "seconds": 2.1239895820617676
+    },
+    {
+      "epoch": 23,
+      "auc": 0.9463555961034048,
+      "validation_logloss": 0.21792441606521606,
+      "training_loss": 0.2174126866760604,
+      "seconds": 2.0374698638916016
+    },
+    {
+      "epoch": 24,
+      "auc": 0.946384694591022,
+      "validation_logloss": 0.2178526669740677,
+      "training_loss": 0.2173813275240977,
+      "seconds": 2.073997735977173
+    }
+  ],
+  "seconds": 71.79147219657898,
+  "features": 428,
+  "params": {
+    "hidden": [
+      64,
+      32
+    ],
+    "batch_size": 4096,
+    "dropout": 0.05,
+    "weight_decay": 0.0001,
+    "seed": 2027,
+    "learning_rate_initial": 0.001,
+    "learning_rate_minimum": 0.00015,
+    "cosine_schedule_epochs": 35
+  },
+  "validation_note": "Donor-only features and offsets. Scaling and categorical vocabulary fitted on outer training rows. Outer AUC checkpoint selection in screening, fixed final epoch when --fixed."
+}

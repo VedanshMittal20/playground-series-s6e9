@@ -1,0 +1,20 @@
+{
+  "model": "gam_spline_r01_s1",
+  "fold": 0,
+  "params": {
+    "ridge": 0.1,
+    "smooth": 1.0,
+    "baseline": true
+  },
+  "auc": 0.9442102743579254,
+  "logloss": 0.22212125858770146,
+  "blend_v2_auc": 0.9450562101075275,
+  "optimization": {
+    "success": true,
+    "iterations": 182,
+    "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+    "objective": 0.21214796103933262,
+    "max_gradient": 1.6638115452480194e-09
+  },
+  "seconds": 18.03590440750122
+}

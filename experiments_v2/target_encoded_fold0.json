@@ -1,0 +1,7 @@
+{
+  "model": "target_encoded",
+  "fold": 0,
+  "auc": 0.9391485430843788,
+  "baseline_auc": 0.9414146186089439,
+  "seconds": 39.4218475818634
+}

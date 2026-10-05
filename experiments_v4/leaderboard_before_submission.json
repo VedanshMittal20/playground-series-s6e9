@@ -1,0 +1,45 @@
+{
+  "snapshot": "playground-series-s6e9-publicleaderboard-2026-09-30T10-23-23.csv",
+  "checked_at_utc": "2026-09-30T10:26:10.953276+00:00",
+  "team": [
+    {
+      "Rank": 571,
+      "TeamId": 16946312,
+      "TeamName": "himanshu mittal",
+      "LastSubmissionDate": "2026-09-28 23:58:07",
+      "Score": 0.94644,
+      "SubmissionCount": 4,
+      "TeamMemberUserNames": "tumsbkabaap,vedanshmittal2076"
+    }
+  ],
+  "teams": 3496,
+  "top_three": [
+    {
+      "Rank": 1,
+      "TeamId": 16913247,
+      "TeamName": "Team Alicia",
+      "LastSubmissionDate": "2026-09-30 00:43:04",
+      "Score": 0.94945,
+      "SubmissionCount": 123,
+      "TeamMemberUserNames": "lowasitgoes,uradkr"
+    },
+    {
+      "Rank": 2,
+      "TeamId": 16809885,
+      "TeamName": "Paul Bryan Elefante",
+      "LastSubmissionDate": "2026-09-30 06:56:08",
+      "Score": 0.94697,
+      "SubmissionCount": 32,
+      "TeamMemberUserNames": "heuljax"
+    },
+    {
+      "Rank": 3,
+      "TeamId": 16823911,
+      "TeamName": "Ahmet Bugrahan ALTUNOK",
+      "LastSubmissionDate": "2026-09-29 23:52:11",
+      "Score": 0.94695,
+      "SubmissionCount": 184,
+      "TeamMemberUserNames": "ahmetbugrahanaltunok"
+    }
+  ]
+}

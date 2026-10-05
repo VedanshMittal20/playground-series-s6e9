@@ -1,0 +1,9 @@
+{
+  "competition": "playground-series-s6e9",
+  "submission_id": 56489044,
+  "file": "submission.csv",
+  "submitted_at_utc": "2026-09-23 09:08:21.507000",
+  "description": "50/50 LightGBM + CatBoost; 3-fold OOF ROC AUC 0.941755; seed 2026",
+  "status": "COMPLETE",
+  "public_score": 0.94150
+}

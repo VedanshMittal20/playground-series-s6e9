@@ -1,0 +1,27 @@
+{
+  "notebooks": [
+    {
+      "path": "references\\blamerx\\s6e9-xgboost-window-encodings-0-946-cv.ipynb",
+      "sha256": "ca061a0955ed6149c52d00abe83e52fe6bfd730b4b97b8ba3c975629f4d4d72a"
+    },
+    {
+      "path": "references\\cdeotte\\fable-5-1-eda-original-data-insights.ipynb",
+      "sha256": "7bcedc1aa1e45a3d2aaaa37b009cba7b026b653c0281d57f731946bb2205b701"
+    },
+    {
+      "path": "references\\heuljax\\kps6e09-xgb-sample.ipynb",
+      "sha256": "ba2122df2b4a5ea01493b0943f82442d4eb5f4bfdbdbcd9bf267cb6c9a664312"
+    },
+    {
+      "path": "references\\naji\\pure-lgbm-model-cv-0-94607-lb-0-94638.ipynb",
+      "sha256": "fa3e1db8f62b0b33b079b1c3499664dc3bd58396a58d63343817a9c1698b6e9f"
+    },
+    {
+      "path": "references\\jazivxt\\single-model-zoom-zoom.ipynb",
+      "sha256": "29c8087188446d9685ae7a007d6a569a43b40e636e5308e83b4a0490177ac8e4",
+      "url": "https://www.kaggle.com/code/jazivxt/single-model-zoom-zoom",
+      "use": "Inspired linear-tree learner and asymmetric income-bin concepts. No external predictions downloaded or used."
+    }
+  ],
+  "adaptation": "heuljax_features.py derives feature definitions from heuljax/kps6e09-xgb-sample. Other notebooks informed original implementations. No downloaded prediction files used."
+}
